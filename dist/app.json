@@ -4,7 +4,7 @@
         "name": "OpenfinPOC",
         "description": "OpenFin POC",
         "url": "https://cdn.example.com",
-        "uuid": "asd",
+        "uuid": "OpenfinPOC",
         "autoShow": true
     },
     "runtime": {
