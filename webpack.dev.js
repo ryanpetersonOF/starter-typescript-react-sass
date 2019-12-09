@@ -29,7 +29,6 @@ module.exports = merge(common, {
                 // Return modified JSON to client
                 res.header('Content-Type', 'application/json; charset=utf-8');
                 res.send(JSON.stringify(config, null, 4));
-                next();
             });
         },
         after: function (app, server) {
