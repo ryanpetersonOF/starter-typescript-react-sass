@@ -21,7 +21,7 @@ module.exports = {
            
             {
                 test: /\.css$/,
-                use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+                use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader']
             },
             
             {
@@ -52,10 +52,10 @@ module.exports = {
     
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'styles.[hash]-[name].css',
+            filename: 'styles.[hash]-[name].css'
         })
     ],
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'dist')
     }    
 };
