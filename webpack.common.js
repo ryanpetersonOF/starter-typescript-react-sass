@@ -53,15 +53,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'styles.[hash]-[name].css',
-        }),
-        /*
-        new HtmlWebpackPlugin({
-            chunks: ['main', 'styles.[hash]-[name].css'],
-            env: NODE_ENV,
-            filename: 'index.html',
-            template: path.join(__dirname, 'dist', 'index.html'),
-        }),
-        */
+        })
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
